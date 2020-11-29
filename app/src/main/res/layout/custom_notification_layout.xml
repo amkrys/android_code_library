@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rlBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/dummy_user1" />
+
+        <LinearLayout
+            android:id="@+id/llBody"
+            android:layout_toEndOf="@+id/appLogo"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/appLogo">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image"
+                android:textColor="#000"
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:text="Title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMassage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_toRightOf="@id/image"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Message"
+                android:textColor="#000" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rlBody"
+        android:id="@+id/imgMsg"
+        android:visibility="visible"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+</RelativeLayout>

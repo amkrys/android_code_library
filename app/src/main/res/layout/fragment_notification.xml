@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.krys.codelibrary.customviews.BoldButton
+            android:id="@+id/btnSimpleNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:text="@string/simple_noti" />
+        <com.krys.codelibrary.customviews.BoldButton
+            android:id="@+id/btnBigTextNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:text="@string/big_text_noti" />
+        <com.krys.codelibrary.customviews.BoldButton
+            android:id="@+id/btnBigPictureNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:text="@string/big_pict_noti" />
+        <com.krys.codelibrary.customviews.BoldButton
+            android:id="@+id/btnInboxNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:text="@string/inbox_noti" />
+        <com.krys.codelibrary.customviews.BoldButton
+            android:id="@+id/btnWithReplyNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:text="@string/reply_noti" />
+        <com.krys.codelibrary.customviews.BoldButton
+            android:id="@+id/btnHeadsUpNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:text="@string/headsup_noti" />
+        <com.krys.codelibrary.customviews.BoldButton
+            android:id="@+id/btnMsgNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:text="@string/message_noti" />
+        <com.krys.codelibrary.customviews.BoldButton
+            android:id="@+id/btnProgNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:text="@string/progress_noti" />
+        <com.krys.codelibrary.customviews.BoldButton
+            android:id="@+id/btnCustomNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:text="@string/remote_noti" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

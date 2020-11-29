@@ -1,26 +1,23 @@
-package com.krys.codelibrary.customview;
+package com.krys.codelibrary.customviews;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.Button;
 
+import com.google.android.material.textview.MaterialTextView;
 
-@SuppressLint("AppCompatCustomView")
-public class RegularButton extends Button {
-
-    public RegularButton(Context context, AttributeSet attrs, int defStyle) {
+public class RegularTextView extends MaterialTextView {
+    public RegularTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
 
-    public RegularButton(Context context, AttributeSet attrs) {
+    public RegularTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public RegularButton(Context context) {
+    public RegularTextView(Context context) {
         super(context);
         init();
     }
@@ -30,4 +27,5 @@ public class RegularButton extends Button {
                 "Montserrat-Regular.ttf");
         setTypeface(tf);
     }
+
 }

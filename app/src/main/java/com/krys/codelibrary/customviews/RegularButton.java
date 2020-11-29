@@ -1,25 +1,25 @@
-package com.krys.codelibrary.customview;
+package com.krys.codelibrary.customviews;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.CheckBox;
 
-@SuppressLint("AppCompatCustomView")
-public class RegularCheckBox extends CheckBox
-{
-    public RegularCheckBox(Context context, AttributeSet attrs, int defStyle) {
+import com.google.android.material.button.MaterialButton;
+
+
+public class RegularButton extends MaterialButton {
+
+    public RegularButton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
 
-    public RegularCheckBox(Context context, AttributeSet attrs) {
+    public RegularButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public RegularCheckBox(Context context) {
+    public RegularButton(Context context) {
         super(context);
         init();
     }
@@ -29,5 +29,4 @@ public class RegularCheckBox extends CheckBox
                 "Montserrat-Regular.ttf");
         setTypeface(tf);
     }
-
 }

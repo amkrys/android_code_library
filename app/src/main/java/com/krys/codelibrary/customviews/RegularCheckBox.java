@@ -1,24 +1,24 @@
-package com.krys.codelibrary.customview;
+package com.krys.codelibrary.customviews;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
-@SuppressLint("AppCompatCustomView")
-public class RegularTextView extends TextView {
-    public RegularTextView(Context context, AttributeSet attrs, int defStyle) {
+import com.google.android.material.checkbox.MaterialCheckBox;
+
+public class RegularCheckBox extends MaterialCheckBox
+{
+    public RegularCheckBox(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
 
-    public RegularTextView(Context context, AttributeSet attrs) {
+    public RegularCheckBox(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public RegularTextView(Context context) {
+    public RegularCheckBox(Context context) {
         super(context);
         init();
     }

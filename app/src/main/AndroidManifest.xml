@@ -17,6 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".services.DirectReplyIntent"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver android:name=".NotificationDismissReceiver"
+            android:enabled="true"
+            android:exported="false"/>
     </application>
 
 </manifest>

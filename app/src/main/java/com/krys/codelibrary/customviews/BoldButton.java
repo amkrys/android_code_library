@@ -1,17 +1,12 @@
-package com.krys.codelibrary.customview;
+package com.krys.codelibrary.customviews;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.Button;
 
-/**
- * Created by obadmin on 8/3/18.
- */
+import com.google.android.material.button.MaterialButton;
 
-@SuppressLint("AppCompatCustomView")
-public class BoldButton extends Button {
+public class BoldButton extends MaterialButton {
     public BoldButton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();

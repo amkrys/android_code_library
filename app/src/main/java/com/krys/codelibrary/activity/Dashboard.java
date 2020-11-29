@@ -1,7 +1,6 @@
 package com.krys.codelibrary.activity;
 
 import android.annotation.SuppressLint;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Menu;
@@ -10,10 +9,9 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.krys.codelibrary.base.BaseActivity;
 import com.krys.codelibrary.R;
-import com.krys.codelibrary.utils.Utils;
+import com.krys.codelibrary.utils.CommonUtils;
 
 import androidx.annotation.NonNull;
-import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -40,7 +38,7 @@ public class Dashboard extends BaseActivity {
     }
 
     private void init() {
-        isDarkMode = Utils.isDarkMode(getActivity());
+        isDarkMode = CommonUtils.isDarkMode(getActivity());
     }
 
     private void findViewById() {
@@ -55,7 +53,7 @@ public class Dashboard extends BaseActivity {
     private void setUpDrawer() {
         NavigationView navigationView = findViewById(R.id.nav_view);
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
+                R.id.nav_home, R.id.nav_notifications, R.id.nav_slideshow,
                 R.id.nav_tools, R.id.nav_share, R.id.nav_info)
                 .setDrawerLayout(drawer)
                 .build();
@@ -79,9 +77,9 @@ public class Dashboard extends BaseActivity {
                 break;
             case R.id.nav_theme:
                 if(isDarkMode){
-                    Utils.disableDarkMode();
+                    CommonUtils.disableDarkMode();
                 } else {
-                    Utils.enableDarkMode();
+                    CommonUtils.enableDarkMode();
                 }
             default:
                 return false;

@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.krys.codelibrary.customview.BoldTextView
+        <com.krys.codelibrary.customviews.BoldTextView
             android:id="@+id/txtWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.krys.codelibrary.customview.RegularTextView
+        <com.krys.codelibrary.customviews.RegularTextView
             android:id="@+id/txtHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -1,4 +1,4 @@
-package com.krys.codelibrary.customview;
+package com.krys.codelibrary.customviews;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -23,7 +23,6 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewOutlineProvider;
-import android.widget.ImageView;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
@@ -33,7 +32,7 @@ import androidx.annotation.RequiresApi;
 
 import com.krys.codelibrary.R;
 
-@SuppressWarnings("UnusedDeclaration")
+
 public class CircleImageView extends androidx.appcompat.widget.AppCompatImageView {
 
     private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;

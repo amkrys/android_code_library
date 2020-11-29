@@ -1,16 +1,12 @@
-package com.krys.codelibrary.customview;
+package com.krys.codelibrary.customviews;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
-/**
- * Created by Fujitsu on 04-08-2016.
- */
-@SuppressLint("AppCompatCustomView")
-public class BoldTextView extends TextView {
+import com.google.android.material.textview.MaterialTextView;
+
+public class BoldTextView extends MaterialTextView {
     public BoldTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();

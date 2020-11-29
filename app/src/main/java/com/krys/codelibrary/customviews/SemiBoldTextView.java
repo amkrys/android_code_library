@@ -1,13 +1,12 @@
-package com.krys.codelibrary.customview;
+package com.krys.codelibrary.customviews;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
-@SuppressLint("AppCompatCustomView")
-public class SemiBoldTextView extends TextView {
+import com.google.android.material.textview.MaterialTextView;
+
+public class SemiBoldTextView extends MaterialTextView {
     public SemiBoldTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();

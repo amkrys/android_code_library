@@ -16,4 +16,14 @@
     <string name="menu_change_theme">Dark Theme</string>
     <string name="dev_name">"Krishna"</string>
     <string name="dev_mail">balkrishnaswami22@gmail.com</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="simple_noti">Simple Notification</string>
+    <string name="big_text_noti">Big Text Notification</string>
+    <string name="big_pict_noti">Big Picture Notification</string>
+    <string name="inbox_noti">Inbox Style Notification</string>
+    <string name="reply_noti">Reply Notification</string>
+    <string name="headsup_noti">HeadsUp Notification</string>
+    <string name="message_noti">Message Style Notification</string>
+    <string name="remote_noti">Remoteview Notification</string>
+    <string name="progress_noti">ProgressBar Notification</string>
 </resources>

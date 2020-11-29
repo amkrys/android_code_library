@@ -8,9 +8,9 @@
             android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_baseline_photo_library_24"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_baseline_notifications_active_24"
+            android:title="@string/menu_notifications" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_baseline_slideshow_24"
