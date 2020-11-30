@@ -1,4 +1,4 @@
-package com.krys.codelibrary;
+package com.krys.codelibrary.receivers;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -15,3 +15,4 @@ public class NotificationDismissReceiver extends BroadcastReceiver {
         NotificationUtils.clearNotifications(context, notificationId);
     }
 }
+

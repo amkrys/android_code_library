@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.krys.codelibrary">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,7 +22,7 @@
         <service android:name=".services.DirectReplyIntent"
             android:enabled="true"
             android:exported="false"/>
-        <receiver android:name=".NotificationDismissReceiver"
+        <receiver android:name=".receivers.NotificationDismissReceiver"
             android:enabled="true"
             android:exported="false"/>
     </application>

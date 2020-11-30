@@ -53,7 +53,7 @@ public class Dashboard extends BaseActivity {
     private void setUpDrawer() {
         NavigationView navigationView = findViewById(R.id.nav_view);
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_notifications, R.id.nav_slideshow,
+                R.id.nav_home, R.id.nav_notifications, R.id.nav_exoplayer,
                 R.id.nav_tools, R.id.nav_share, R.id.nav_info)
                 .setDrawerLayout(drawer)
                 .build();

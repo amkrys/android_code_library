@@ -1,4 +1,4 @@
-package com.krys.codelibrary.ui.slideshow;
+package com.krys.codelibrary.ui.exoplayer;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.krys.codelibrary.R;
 
-public class SlideshowFragment extends Fragment {
+public class ExoPlayerFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private ExoPlayerViewModel exoPlayerViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
+        exoPlayerViewModel =
+                new ViewModelProvider(this).get(ExoPlayerViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_exoplayer, container, false);
         final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        exoPlayerViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

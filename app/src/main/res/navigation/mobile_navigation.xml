@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_notification" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.krys.codelibrary.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_exoplayer"
+        android:name="com.krys.codelibrary.ui.exoplayer.ExoPlayerFragment"
+        android:label="@string/menu_exoplayer"
+        tools:layout="@layout/fragment_exoplayer" />
 </navigation>

@@ -19,7 +19,7 @@ import androidx.core.app.RemoteInput;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.IconCompat;
 
-import com.krys.codelibrary.NotificationDismissReceiver;
+import com.krys.codelibrary.receivers.NotificationDismissReceiver;
 import com.krys.codelibrary.R;
 import com.krys.codelibrary.activity.Dashboard;
 import com.krys.codelibrary.services.DirectReplyIntent;
