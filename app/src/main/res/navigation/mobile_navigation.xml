@@ -18,8 +18,15 @@
         tools:layout="@layout/fragment_notification" />
 
     <fragment
+        android:id="@+id/nav_jpagination"
+        android:name="com.krys.codelibrary.ui.pagination.PaginationFragment"
+        android:label="@string/menu_pagination"
+        tools:layout="@layout/fragment_pagination" />
+
+    <fragment
         android:id="@+id/nav_exoplayer"
-        android:name="com.krys.codelibrary.ui.exoplayer.ExoPlayerFragment"
+        android:name="com.krys.codelibrary.ui.exoplayer.PlayerFragment"
         android:label="@string/menu_exoplayer"
-        tools:layout="@layout/fragment_exoplayer" />
+        tools:layout="@layout/fragment_player" />
+
 </navigation>

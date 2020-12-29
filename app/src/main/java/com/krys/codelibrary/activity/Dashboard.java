@@ -53,8 +53,8 @@ public class Dashboard extends BaseActivity {
     private void setUpDrawer() {
         NavigationView navigationView = findViewById(R.id.nav_view);
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_notifications, R.id.nav_exoplayer,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_info)
+                R.id.nav_home, R.id.nav_notifications, R.id.nav_jpagination,
+                R.id.nav_exoplayer, R.id.nav_share, R.id.nav_info)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -91,11 +91,9 @@ public class Dashboard extends BaseActivity {
     public boolean onPrepareOptionsMenu(Menu menu) {
         invalidateOptionsMenu();
         if(isDarkMode){
-            menu.findItem(R.id.nav_theme)
-                    .setTitle("Light Theme");
+            menu.findItem(R.id.nav_theme).setTitle("Light Theme");
         } else {
-            menu.findItem(R.id.nav_theme)
-                    .setTitle("Dark Theme");
+            menu.findItem(R.id.nav_theme).setTitle("Dark Theme");
         }
         return super.onPrepareOptionsMenu(menu);
     }

@@ -27,4 +27,5 @@
     <style name="Theme.CodeLibrary.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.CodeLibrary.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

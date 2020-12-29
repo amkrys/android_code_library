@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame_layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/player_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:controller_layout_id="@layout/custom_player_control"
+                app:hide_on_touch="true"
+                app:keep_content_on_player_reset="true"
+                app:repeat_toggle_modes="all" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <com.krys.codelibrary.customviews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_filter_b_and_w_24"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="Choose video quality." />
+
+        <com.krys.codelibrary.customviews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_baseline_fullscreen_24"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="Change orientation." />
+
+        <com.krys.codelibrary.customviews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_baseline_forward_10_24"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="Forward video." />
+
+        <com.krys.codelibrary.customviews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_baseline_replay_10_24"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="Backward video." />
+
+        <com.krys.codelibrary.customviews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="1x    Button is to change speed." />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

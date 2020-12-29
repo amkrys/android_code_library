@@ -78,6 +78,7 @@
             android:layout_margin="8dp"
             android:textAlignment="center"
             android:text="@string/remote_noti" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

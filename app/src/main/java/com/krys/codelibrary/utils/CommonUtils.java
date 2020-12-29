@@ -1,5 +1,6 @@
 package com.krys.codelibrary.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
@@ -10,14 +11,26 @@ import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
 import android.media.ExifInterface;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatDelegate;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.krys.codelibrary.BuildConfig;
+import com.krys.codelibrary.R;
 
 import java.io.File;
+import java.util.Formatter;
+import java.util.Locale;
 
 public class CommonUtils {
 
@@ -41,6 +54,31 @@ public class CommonUtils {
                 break;
         }
         return mode;
+    }
+
+    public static void showToast(Context context, String message) {
+        try {
+            //Toast.makeText(context, message, Toast.LENGTH_LONG).show();
+            LayoutInflater inflater = ((Activity) context).getLayoutInflater();
+            View layout = inflater.inflate(R.layout.custom_toast,null);
+            TextView text = (TextView) layout.findViewById(R.id.text);
+            text.setText(message);
+            Toast toast = new Toast(context.getApplicationContext());
+            toast.setGravity(Gravity.TOP, 0, 200);
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setView(layout);
+            toast.show();
+        } catch (Exception e) {
+            Toast.makeText(context, e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public static void showImage(Context context, String imgUrl, ImageView imageView){
+        Glide.with(context)
+                .load(imgUrl)
+                .override(150,150)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(imageView);
     }
 
     public static void disableDarkMode() {
@@ -208,6 +246,39 @@ public class CommonUtils {
         }
 
         return inSampleSize;
+    }
+
+    public static String stringForTime(int timeMs) {
+        StringBuilder mFormatBuilder = new StringBuilder();
+        Formatter mFormatter = new Formatter(mFormatBuilder, Locale.getDefault());
+        int totalSeconds = timeMs / 1000;
+
+        int seconds = totalSeconds % 60;
+        int minutes = (totalSeconds / 60) % 60;
+        int hours = totalSeconds / 3600;
+
+        mFormatBuilder.setLength(0);
+        if (hours > 0) {
+            return mFormatter.format("%d:%02d:%02d", hours, minutes, seconds).toString();
+        } else {
+            return mFormatter.format("%02d:%02d", minutes, seconds).toString();
+        }
+    }
+
+    public static String getMessageString(Context context, int id){
+        return context.getResources().getString(id);
+    }
+
+    public static int getColorResource(Context context, int id){
+        return context.getResources().getColor(id);
+    }
+
+    public static Drawable getDrawableResource(Context context, int id){
+        return context.getResources().getDrawable(id);
+    }
+
+    public static int getImageResource(Context context, int id){
+        return id;
     }
 
 }
