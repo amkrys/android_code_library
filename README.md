@@ -1,6 +1,6 @@
 ### Welcome, User! 😁
 
-This repos is just for you its all in one code book with latest dependencies 😘👌
+This repo is just for you its all in one code book with latest dependencies 😘👌
 
 ### What's this for ? 
 
