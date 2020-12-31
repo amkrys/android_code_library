@@ -54,7 +54,7 @@ public class Dashboard extends BaseActivity {
         NavigationView navigationView = findViewById(R.id.nav_view);
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_notifications, R.id.nav_jpagination,
-                R.id.nav_exoplayer, R.id.nav_share, R.id.nav_info)
+                R.id.nav_exoplayer, R.id.nav_architectures)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -73,7 +73,7 @@ public class Dashboard extends BaseActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_share:
-                Toast.makeText(this,"Hello",Toast.LENGTH_LONG).show();
+
                 break;
             case R.id.nav_theme:
                 if(isDarkMode){

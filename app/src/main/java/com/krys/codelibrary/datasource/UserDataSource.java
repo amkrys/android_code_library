@@ -18,10 +18,10 @@ public class UserDataSource extends PageKeyedDataSource<Integer, UserResponse.It
     public static final int PAGE_SIZE = 50;
 
     //we will start from the first page which is 1
-    private static final int FIRST_PAGE = 1;
+    public static final int FIRST_PAGE = 1;
 
     //we need to fetch from stackoverflow
-    private static final String SITE_NAME = "stackoverflow";
+    public static final String SITE_NAME = "stackoverflow";
 
     //this will be called once to load the initial data
     @Override

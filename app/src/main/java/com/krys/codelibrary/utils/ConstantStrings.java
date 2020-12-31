@@ -11,4 +11,6 @@ public class ConstantStrings {
 
     public static String KEY_TEXT_REPLY = "key_text_reply";
     public static String KEY_NOTIFY_ID = "key_notify_id";
+
+    public static String API_URL = "https://api.stackexchange.com/2.2/";
 }

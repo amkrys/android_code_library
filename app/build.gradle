@@ -65,4 +65,7 @@ dependencies {
     //adding exoplayer
     implementation 'com.google.android.exoplayer:exoplayer:2.11.6'
 
+    //adding Lottie Animation
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
 }

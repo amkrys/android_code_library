@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_baseline_home_24"
@@ -19,6 +20,11 @@
             android:id="@+id/nav_exoplayer"
             android:icon="@drawable/ic_baseline_slideshow_24"
             android:title="@string/menu_exoplayer" />
+        <item
+            android:id="@+id/nav_architectures"
+            android:icon="@drawable/ic_baseline_art_track_24"
+            android:title="@string/menu_architectures" />
+
     </group>
 
 </menu>

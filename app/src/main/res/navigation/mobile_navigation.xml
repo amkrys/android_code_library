@@ -29,4 +29,28 @@
         android:label="@string/menu_exoplayer"
         tools:layout="@layout/fragment_player" />
 
+    <fragment
+        android:id="@+id/nav_architectures"
+        android:name="com.krys.codelibrary.ui.arcitecture.ArchitecturesFragment"
+        android:label="@string/menu_architectures"
+        tools:layout="@layout/fragment_architectures" />
+
+    <fragment
+        android:id="@+id/fragment_mvvm"
+        android:name="com.krys.codelibrary.ui.mvvm.MVVMFragment"
+        android:label="@string/simple_mvvm"
+        tools:layout="@layout/fragment_mvvm" />
+
+    <fragment
+        android:id="@+id/fragment_mvp"
+        android:name="com.krys.codelibrary.ui.mvp.MVPFragment"
+        android:label="@string/simple_mvp"
+        tools:layout="@layout/fragment_mvp" />
+
+    <fragment
+        android:id="@+id/fragment_mvc"
+        android:name="com.krys.codelibrary.ui.mvc.MVCFragment"
+        android:label="@string/simple_mvc"
+        tools:layout="@layout/fragment_mvc" />
+
 </navigation>
