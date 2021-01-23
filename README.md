@@ -9,6 +9,11 @@ Well its nothing but i'll try to add some useful codes with latest technologies 
 ### Features
 
 - Light Mode/Dark Mode toggle.
+- Custom Widgets which includes -
+  - TextView with custom font
+  - Button with custom font
+  - Checkbox with custom font
+  - CircleImageView
 - Notification types with single Utils class which includes - 
   - Simple Notification
   - Big Text Notification
@@ -21,6 +26,7 @@ Well its nothing but i'll try to add some useful codes with latest technologies 
   - Custom(RemoteView) Notification
 - NavigationUI
 - Jetpack Pagination
+- Jetpack Room Database
 - Architecture/Patterns
   - Basic MVVM
   - Basic MVP
