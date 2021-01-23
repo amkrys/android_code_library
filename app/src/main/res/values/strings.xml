@@ -81,4 +81,11 @@
     <string name="simple_mvvm">Basic MVVM</string>
     <string name="simple_mvp">Basic MVP</string>
     <string name="simple_mvc">Basic MVC</string>
+    <string name="menu_room">Jetpack Room</string>
+
+    <string name="poster">poster</string>
+    <string name="best_rated">Best Rated</string>
+    <string name="new_videos">New Videos</string>
+    <string name="new_releasees">New Releasees</string>
+
 </resources>

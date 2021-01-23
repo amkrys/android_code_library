@@ -53,7 +53,7 @@ public class Dashboard extends BaseActivity {
     private void setUpDrawer() {
         NavigationView navigationView = findViewById(R.id.nav_view);
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_notifications, R.id.nav_jpagination,
+                R.id.nav_home, R.id.nav_notifications, R.id.nav_jpagination, R.id.nav_jroom,
                 R.id.nav_exoplayer, R.id.nav_architectures)
                 .setDrawerLayout(drawer)
                 .build();
@@ -72,9 +72,6 @@ public class Dashboard extends BaseActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.nav_share:
-
-                break;
             case R.id.nav_theme:
                 if(isDarkMode){
                     CommonUtils.disableDarkMode();
@@ -84,7 +81,6 @@ public class Dashboard extends BaseActivity {
             default:
                 return false;
         }
-        return true;
     }
 
     @Override

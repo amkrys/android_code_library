@@ -25,6 +25,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions;
 import com.krys.codelibrary.BuildConfig;
 import com.krys.codelibrary.R;
 
@@ -75,9 +76,11 @@ public class CommonUtils {
 
     public static void showImage(Context context, String imgUrl, ImageView imageView){
         Glide.with(context)
+                .asBitmap()
                 .load(imgUrl)
-                .override(150,150)
+                .transition(new BitmapTransitionOptions().crossFade(1000))
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .error(R.drawable.ic_placeholder)
                 .into(imageView);
     }
 

@@ -13,4 +13,7 @@ public class ConstantStrings {
     public static String KEY_NOTIFY_ID = "key_notify_id";
 
     public static String API_URL = "https://api.stackexchange.com/2.2/";
+    public static String ROOM_API_URL = "https://api.themoviedb.org/";
+    public static String BACK_DROP_BASE = "http://image.tmdb.org/t/p/w780";
+    public static String POSTER_BASE = "http://image.tmdb.org/t/p/w185";
 }

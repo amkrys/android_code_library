@@ -68,4 +68,8 @@ dependencies {
     //adding Lottie Animation
     implementation 'com.airbnb.android:lottie:3.4.0'
 
+    //adding room db
+    implementation "androidx.room:room-runtime:2.2.6"
+    annotationProcessor "androidx.room:room-compiler:2.2.6"
+
 }

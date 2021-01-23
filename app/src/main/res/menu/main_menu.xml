@@ -17,6 +17,10 @@
             android:icon="@drawable/ic_baseline_dynamic_feed_24"
             android:title="@string/menu_pagination" />
         <item
+            android:id="@+id/nav_jroom"
+            android:icon="@drawable/ic_outline_cloud_off_24"
+            android:title="@string/menu_room" />
+        <item
             android:id="@+id/nav_exoplayer"
             android:icon="@drawable/ic_baseline_slideshow_24"
             android:title="@string/menu_exoplayer" />

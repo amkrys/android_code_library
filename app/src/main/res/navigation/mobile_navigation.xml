@@ -53,4 +53,10 @@
         android:label="@string/simple_mvc"
         tools:layout="@layout/fragment_mvc" />
 
+    <fragment
+        android:id="@+id/nav_jroom"
+        android:name="com.krys.codelibrary.ui.room.RoomFragment"
+        android:label="@string/menu_room"
+        tools:layout="@layout/fragment_room" />
+
 </navigation>
